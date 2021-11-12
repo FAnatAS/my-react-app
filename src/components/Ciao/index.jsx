@@ -19,7 +19,7 @@ class Ciao extends Component{
    if(isHi){
     return <>
       <h2>Hi, {name}!</h2>
-      <button onClick={this.handlerBtn}>Switch Ciao</button>
+      <button onClick={this.handlerBtn}>Ciao</button>
       </>;
   }
   return <h2>Bye, {name}!</h2>;

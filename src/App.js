@@ -53,10 +53,10 @@ render(){
   <p>{isDirection?'straight':'reverse'}
   <button onClick={this.sortUsers}>SORT</button>
   </p>
-   <ul>
-  {users.map(({fname}, i)=><li key={i}><Ciao name={fname}/></li>
+   <div>
+  {users.map(({fname,id})=><Ciao key={id} id={id} name={fname}/>
   )}
-  </ul>
+  </div>
   </>
 }
 }
