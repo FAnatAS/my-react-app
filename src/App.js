@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Greeting from './components/Greeting';
+import Ciao from './components/Ciao';
 
 function App() {
   // return (
@@ -23,10 +23,15 @@ function App() {
   //   </div>
   // );
 //return <h1>Hi, JSX! </h1>
+
+const user = {
+  fname:'Elon',
+  sname: 'Musk'
+}
 return <>
-<Greeting name='Elon Musk' greet='Hello'/>
-<Greeting name='Elen' greet='Hi'/>
-<Greeting name='Tim Lee' greet='Bye'/>
+<Ciao name={`${user.fname} ${user.sname}`} />
+<Ciao name='Elen' />
+<Ciao name='Tim Lee' />
 </>
 
 }
